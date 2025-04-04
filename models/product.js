@@ -26,7 +26,4 @@ const products = sequelize.define(
   }
 );
 
-users.hasMany(products, { foreignKey: 'user_id' });
-products.belongsTo(users, { foreignKey: 'user_id' });
-
 module.exports = { products };

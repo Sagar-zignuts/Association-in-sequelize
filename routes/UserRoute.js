@@ -1,7 +1,4 @@
-const {
-  insertDataInUser,
-  getDataViaOrder,
-} = require('../controllers/ManageData');
+const { insertDataInUser } = require('../controllers/UserController');
 const router = require('express').Router();
 
 router.post('/InsertUser', insertDataInUser);
